@@ -1,5 +1,5 @@
 //
-//  PlaySoundViewController.swift
+//  PlaySoundsViewController.swift
 //  PitchPerfect
 //
 //  Created by Drazen Pondeljak on 04.02.2018.
@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class PlaySoundViewController: UIViewController {
+class PlaySoundsViewController: UIViewController {
 
     @IBOutlet weak var snailButton: UIButton!
     @IBOutlet weak var chipmunkButton: UIButton!
@@ -40,9 +40,13 @@ class PlaySoundViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAudio()
-        
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        configureUI(.notPlaying)
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
