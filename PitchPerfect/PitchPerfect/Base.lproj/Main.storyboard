@@ -87,7 +87,7 @@
                                                     <action selector="playSoundForButton:" destination="q7i-uQ-gBv" eventType="touchUpInside" id="QGT-1Y-Dxr"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x50-2M-blC" userLabel="Fast">
+                                            <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x50-2M-blC" userLabel="Fast">
                                                 <rect key="frame" x="207" y="0.0" width="207" height="189.33333333333334"/>
                                                 <state key="normal" image="Fast"/>
                                                 <connections>
@@ -99,14 +99,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fMj-MR-Bro">
                                         <rect key="frame" x="0.0" y="189.33333333333331" width="414" height="189.33333333333331"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6J-h4-omf" userLabel="High Pitch">
+                                            <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6J-h4-omf" userLabel="High Pitch">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="189.33333333333334"/>
                                                 <state key="normal" image="HighPitch"/>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="q7i-uQ-gBv" eventType="touchUpInside" id="5yd-rF-jXa"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAm-Xx-f1h" userLabel="Low Pitch">
+                                            <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAm-Xx-f1h" userLabel="Low Pitch">
                                                 <rect key="frame" x="207" y="0.0" width="207" height="189.33333333333334"/>
                                                 <state key="normal" image="LowPitch"/>
                                                 <connections>
@@ -118,14 +118,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cCV-p5-z6G">
                                         <rect key="frame" x="0.0" y="378.66666666666669" width="414" height="189.33333333333331"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84w-Lp-Goo" userLabel="Echo">
+                                            <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84w-Lp-Goo" userLabel="Echo">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="189.33333333333334"/>
                                                 <state key="normal" image="Echo"/>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="q7i-uQ-gBv" eventType="touchUpInside" id="Yum-sw-lm6"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGm-9j-ESb" userLabel="Reverb">
+                                            <button opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGm-9j-ESb" userLabel="Reverb">
                                                 <rect key="frame" x="207" y="0.0" width="207" height="189.33333333333334"/>
                                                 <state key="normal" image="Reverb"/>
                                                 <connections>
@@ -148,6 +148,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gtZ-wz-ViX" firstAttribute="bottom" secondItem="jjy-Li-umN" secondAttribute="bottom" constant="20" id="PG0-K4-Kh8"/>
                             <constraint firstItem="gtZ-wz-ViX" firstAttribute="bottom" secondItem="fUU-ua-h7I" secondAttribute="bottom" constant="104" id="Rf0-bL-gT1"/>
